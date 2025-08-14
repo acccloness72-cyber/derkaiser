@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đơn xin lỗi Thóc</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container py-4">
+      <h1 class="mb-4 text-center fw-bold">ĐƠN XIN LỖI THÓC</h1>
+
+      <form
+        action="mailto:lovelysnow210@gmail.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <div class="row g-3">
+          <!-- Họ -->
+          <div class="col-md-6">
+            <label for="name" class="form-label">Họ:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Nhập họ của bạn"
+              required
+            />
+          </div>
+
+          <!-- Tên -->
+          <div class="col-md-6">
+            <label for="lastname" class="form-label">Tên:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="lastname"
+              placeholder="Nhập tên của bạn"
+              required
+            />
+          </div>
+
+          <!-- Email -->
+          <div class="col-md-6">
+            <label for="email" class="form-label">Email:</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Nhập email"
+              required
+            />
+          </div>
+
+          <!-- Điện thoại -->
+          <div class="col-md-6">
+            <label for="phone" class="form-label">Điện thoại:</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="phone"
+              placeholder="Nhập số điện thoại của bạn"
+              required
+            />
+          </div>
+
+          <!-- Ngày sinh -->
+          <div class="col-md-6">
+            <label for="dob" class="form-label">Ngày tháng năm sinh:</label>
+            <input type="date" class="form-control" id="dob" />
+          </div>
+
+          <!-- Nơi ở -->
+          <div class="col-md-6">
+            <label for="country" class="form-label">Nơi ở hiện tại:</label>
+            <select class="form-select" id="country" required>
+              <option value="" disabled selected>Chọn quận</option>
+              <option value="bd">Ba Đình</option>
+              <option value="cg">Cầu Giấy</option>
+              <option value="dd">Đống Đa</option>
+              <option value="hbt">Hai Bà Trưng</option>
+              <option value="hk">Hoàn Kiếm</option>
+              <option value="tx">Thanh Xuân</option>
+              <option value="hm">Hoàng Mai</option>
+              <option value="lb">Long Biên</option>
+              <option value="th">Tây Hồ</option>
+              <option value="hd">Hà Đông</option>
+              <option value="ntl">Nam Từ Liêm</option>
+              <option value="btl">Bắc Từ Liêm</option>
+            </select>
+          </div>
+
+          <!-- Lý do -->
+          <div class="col-md-6">
+            <label for="wh" class="form-label">Lí do phải viết đơn:</label>
+            <select class="form-select" id="wh" required>
+              <option value="" disabled selected>Chọn lí do</option>
+              <option value="silent">Sai lừn trít mừn với thóc</option>
+              <option value="viol">Nói tục</option>
+              <option value="smok">Hút thuốc</option>
+              <option value="eat">Ăn uống vớ vẩn</option>
+            </select>
+          </div>
+
+          <!-- Cách khắc phục -->
+          <div class="col-md-6">
+            <label for="kp" class="form-label">Cách khắc phục:</label>
+            <select class="form-select" id="kp" required>
+              <option value="" disabled selected>Chọn cách khắc phục</option>
+              <option value="silent">Nói liên tục không ngừng</option>
+              <option value="viol">Bớt nói tục</option>
+              <option value="smok">Bỏ thuốc</option>
+              <option value="eat">Ăn cái gì ngon ngon</option>
+              <option value="all">Tất cả những cách trên</option>
+              <option value="none">Không khắc phục</option>
+            </select>
+          </div>
+
+          <!-- Ghi chú -->
+          <div class="col-12">
+            <label for="message" class="form-label">Ghi chú:</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="4"
+              placeholder="Nhập yêu cầu hoặc ghi chú của bạn"
+              required
+            ></textarea>
+          </div>
+
+          <!-- Nút gửi -->
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary w-100">Gửi</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
